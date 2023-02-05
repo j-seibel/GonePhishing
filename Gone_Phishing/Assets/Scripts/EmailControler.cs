@@ -23,17 +23,14 @@ public class EmailControler : MonoBehaviour
     string[] emailInfo;
 
     float score =0;
-
     int emailsSent = 0;
-
     public TextAsset phishDialogue;
-
     string[] phishDialogueOrder;
-
-
     public TextMeshProUGUI phishDialogueText;
-
     public Image dialogBox;
+    public Button tutorialButton;
+
+    public Image tutorialScreen;
 
 
 
@@ -52,6 +49,8 @@ public class EmailControler : MonoBehaviour
         phishDialogueOrder = phishDialogue.text.Split(';');
         phishDialogueText.text = "";
         dialogBox.gameObject.SetActive(false);
+        tutorialButton.onClick.AddListener(startGame);
+        
 
     }
 
@@ -94,6 +93,8 @@ public class EmailControler : MonoBehaviour
     }
 
     void CancelEmail(){
+        dialogBox.gameObject.SetActive(true);
+        phishDialogueText.text = phishDialogueOrder[emailsSent];
         if(emailsSent < 10){
            if(emailInfo[5] == "ACCEPT"){
             score -= 1;
@@ -120,5 +121,10 @@ public class EmailControler : MonoBehaviour
         emailTitle.text = emailInfo[1];
         cancelText.text = emailInfo[3];
         sendText.text = emailInfo[4];
+    }
+
+    void startGame(){
+        tutorialScreen.gameObject.SetActive(false);
+        Debug.Log("Start Game");
     }
 }
