@@ -5,7 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
+    path: Assets/Scenes/OutsideGrandmasHouse1.unity
+    guid: ed4f20a148677d844a9eac66c16469e7
+  - enabled: 1
+    path: Assets/Scenes/OfficeScene1Template 1.unity
+    guid: 588570ebfd781aa4c80363040f165438
+  - enabled: 1
+    path: Assets/Scenes/PhisPhight.unity
+    guid: 3b5505de2a0e62f4794c24bf1efc7a31
+  - enabled: 1
+    path: Assets/Scenes/OfficeScene1Template.unity
+    guid: d853efc06f62b2d45b0e45689d8a12b1
+  - enabled: 1
+    path: Assets/Scenes/clikclokscene.unity
+    guid: c762cac9be8b3514c9b83810539785db
+  - enabled: 1
+    path: Assets/Scenes/Clik-Clok.unity
+    guid: f6b8dddb869903f48a52636be2c1b2ee
+  - enabled: 1
+    path: Assets/Scenes/clikclokscene 1.unity
+    guid: a6479e2b92f3bf04c90e89f91f80f69d
+  - enabled: 1
+    path: Assets/Scenes/dogescene.unity
+    guid: 3b7de1ce5c812c64c97e309739f31448
   m_configObjects: {}
