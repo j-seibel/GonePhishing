@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 public class AppControler : MonoBehaviour
 {
     // Start is called before the first frame update
@@ -46,6 +47,13 @@ public class AppControler : MonoBehaviour
     int attempts =0;
 
     public GameObject dialogueBox;
+    public Button tutorialButton;
+    public Image tutorialImage;
+
+    public Image endScreen;
+    public Button endButton;
+    public float endScreenTime = 5.0f;
+    
 
 
     string[] imageList = {"image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "KK", "image11", "image10"};
@@ -55,6 +63,7 @@ public class AppControler : MonoBehaviour
         dialogueBox.gameObject.SetActive(false);
         scoreText.text = "Score: " + score;
         ResetApps();
+        tutorialButton.onClick.AddListener(EndTutorial);
         button1.onClick.AddListener(delegate {WhichButton(0);});
         button2.onClick.AddListener(delegate {WhichButton(1);});
         button3.onClick.AddListener(delegate {WhichButton(2);});
@@ -67,6 +76,15 @@ public class AppControler : MonoBehaviour
         button10.onClick.AddListener(delegate {WhichButton(9);});
         button11.onClick.AddListener(delegate {WhichButton(10);});
         button12.onClick.AddListener(delegate {WhichButton(11);});
+        endButton.onClick.AddListener(EndGame);
+    }
+
+    void EndTutorial(){
+        tutorialImage.gameObject.SetActive(false);
+    }
+
+    void EndGame(){
+        SceneManager.LoadScene(7);
     }
 
     // Update is called once per frame
@@ -137,7 +155,7 @@ public class AppControler : MonoBehaviour
                     button12.gameObject.SetActive(false);
                     break;
             }
-            
+            endScreen.gameObject.SetActive(true);
         }
         
     }

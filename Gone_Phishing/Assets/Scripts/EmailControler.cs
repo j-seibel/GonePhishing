@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class EmailControler : MonoBehaviour
@@ -31,6 +32,8 @@ public class EmailControler : MonoBehaviour
     public Button tutorialButton;
 
     public Image tutorialScreen;
+    public Image endScreen;
+    public Button endButton;
 
 
 
@@ -50,22 +53,20 @@ public class EmailControler : MonoBehaviour
         phishDialogueText.text = "";
         dialogBox.gameObject.SetActive(false);
         tutorialButton.onClick.AddListener(startGame);
+        endButton.onClick.AddListener(endGame);
         
 
+    }
+
+    void endGame(){
+        SceneManager.LoadScene(4);
     }
 
     // Update is called once per frame
     void Update()
     {
         if(emailsSent >= 10){
-            if(score >= 0){
-                emailText.text = "You Win!";
-                emailText.color = new Color(0,1,0,1);
-            }
-            else{
-                emailText.text = "You Lose!";
-                emailText.color = new Color(1,0,0,1);
-            }
+            endScreen.gameObject.SetActive(true);
             sendButton.gameObject.SetActive(false);
             cancelButton.gameObject.SetActive(false);
         }

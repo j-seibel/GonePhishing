@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class DogeInteraction : MonoBehaviour
 {
@@ -16,6 +17,7 @@ public class DogeInteraction : MonoBehaviour
     public int sceneIndex = 2;
 
     public TextMeshProUGUI dialogueText;
+    public Image manual;
 
     SpriteRenderer Doge;
     public Sprite newSprite;
@@ -38,8 +40,9 @@ public class DogeInteraction : MonoBehaviour
 
         if(timerDisplay < 0){
             dialogueBox.SetActive(false);
-            if(dialogueIndex == dialogueMaxIndex){
+            if(dialogueIndex == dialogueMaxIndex-1){
                 Doge.sprite = newSprite;
+                manual.gameObject.SetActive(true);
             }
         }
      }   
@@ -53,7 +56,9 @@ public class DogeInteraction : MonoBehaviour
         }
         timerDisplay = displayTime;
         dialogueIndex++;
-        
+        if(dialogueIndex == 4){
+            manual.gameObject.SetActive(false);
+        }
     }
 
 }

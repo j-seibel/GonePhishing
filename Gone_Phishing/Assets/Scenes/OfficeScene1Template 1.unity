@@ -3717,7 +3717,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 262906580}
   dialogueFile: {fileID: 4900000, guid: 531c310e52b40544e9992280911d6ae9, type: 3}
   dialogueMaxIndex: 1
-  sceneIndex: 2
+  sceneIndex: 3
   dialogueText: {fileID: 2132971686}
 --- !u!1 &1225097107
 GameObject:
@@ -5546,7 +5546,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1926158119}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4592156, y: -0.11506128, z: -10}
+  m_LocalPosition: {x: -1.459249, y: -0.10772896, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

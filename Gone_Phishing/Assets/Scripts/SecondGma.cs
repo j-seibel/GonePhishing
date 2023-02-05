@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class SecondGma : MonoBehaviour
@@ -35,6 +36,9 @@ float displayTime = 4.0f;
 
         if(timerDisplay < 0){
             dialogueBox.SetActive(false);
+             if(dialogueIndex == dialogueMaxIndex){
+                SceneManager.LoadScene(10);
+            }
         }
      }   
      
@@ -45,6 +49,7 @@ float displayTime = 4.0f;
         if(printerFixed.isStopped){
         if(dialogueIndex < dialogueOrder.Length){
             dialogueText.text = dialogueOrder[dialogueIndex];
+           
         }
         timerDisplay = displayTime;
         dialogueIndex++;

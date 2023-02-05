@@ -1483,7 +1483,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1081239743}
   dialogueFile: {fileID: 4900000, guid: 425265f97ea77d54da874a274150a67a, type: 3}
   dialogueMaxIndex: 1
-  sceneIndex: 5
+  sceneIndex: 6
   dialogueText: {fileID: 1266660560}
 --- !u!61 &275248358
 BoxCollider2D:

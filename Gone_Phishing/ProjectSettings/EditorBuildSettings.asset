@@ -8,12 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/StartScreen.unity
-    guid: 8767c9f69c89b4b40a27c7d8489d9768
+    path: Assets/Scenes/Start.unity
+    guid: 7ff7bda45e7bec24e88fa8681f38f606
   - enabled: 1
-    path: Assets/Scenes/SecondGma.unity
-    guid: ed4f20a148677d844a9eac66c16469e7
+    path: Assets/Scenes/FirstGma.unity
+    guid: 3ea960675aa212e4f8d59c79dec460e6
   - enabled: 1
     path: Assets/Scenes/OfficeScene1Template 1.unity
     guid: 588570ebfd781aa4c80363040f165438
@@ -35,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/dogescene.unity
     guid: 3b7de1ce5c812c64c97e309739f31448
+  - enabled: 1
+    path: Assets/Scenes/SecondGma.unity
+    guid: c07c6440a9b05a549a8bca7a56bded56
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 8767c9f69c89b4b40a27c7d8489d9768
   m_configObjects: {}
