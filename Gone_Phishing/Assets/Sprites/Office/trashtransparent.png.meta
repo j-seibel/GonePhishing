@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: bde725e3eb3471c4581cf65cccb21bd2
+guid: 6c87c37a992065c4aa5d4b2dd5a65bee
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Phish Animation_0
+      name: trashtransparent_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
-        width: 256
-        height: 256
+        y: 434
+        width: 371
+        height: 288
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a7dc65650eb9b6747957dca7502d461a
-      internalID: -1319084132
+      spriteID: abafcb40a4e9bef41b1099b84f089dd8
+      internalID: -1051576031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phish Animation_1
+      name: trashtransparent_1
       rect:
         serializedVersion: 2
-        x: 256
-        y: 256
-        width: 256
-        height: 256
+        x: 366
+        y: 53
+        width: 374
+        height: 320
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9cf514687125d04cba275cacbef4e26
-      internalID: 1751167627
+      spriteID: 10e569cea3b63844da8fc370e0ec8b3e
+      internalID: 1529892640
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Phish Animation_2
+      name: trashtransparent_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 256
+        x: 371
+        y: 394
+        width: 369
+        height: 342
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,29 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4d495720d090144888c03ed32832a19
-      internalID: 1158211367
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Phish Animation_3
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aaa01acb5c43574585bd6c1027f3104
-      internalID: 723017847
+      spriteID: 2a8ba71b06f669845863a193f55a0535
+      internalID: 342259188
       vertices: []
       indices: 
       edges: []
@@ -211,10 +190,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Phish Animation_3: 723017847
-      Phish Animation_1: 1751167627
-      Phish Animation_0: -1319084132
-      Phish Animation_2: 1158211367
+      trashtransparent_1: 1529892640
+      trashtransparent_0: -1051576031
+      trashtransparent_2: 342259188
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
