@@ -3599,7 +3599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 229259564}
   dialogueFile: {fileID: 4900000, guid: 6babf6c53bd9ad749829aba4a6c93334, type: 3}
-  dialogueMaxIndex: 4
+  dialogueMaxIndex: 3
   dialogueText: {fileID: 297822748}
 --- !u!4 &1660562985 stripped
 Transform:

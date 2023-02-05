@@ -9,7 +9,10 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/OutsideGrandmasHouse1.unity
+    path: Assets/Scenes/StartScreen.unity
+    guid: 8767c9f69c89b4b40a27c7d8489d9768
+  - enabled: 1
+    path: Assets/Scenes/SecondGma.unity
     guid: ed4f20a148677d844a9eac66c16469e7
   - enabled: 1
     path: Assets/Scenes/OfficeScene1Template 1.unity

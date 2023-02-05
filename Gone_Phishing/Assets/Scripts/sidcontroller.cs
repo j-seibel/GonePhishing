@@ -42,6 +42,7 @@ public class sidcontroller : MonoBehaviour {
                   DogeInteraction doge = hit.collider.GetComponent<DogeInteraction>();
                   ParticleSystem printer = hit.collider.gameObject.transform.GetChild(0).GetComponent<ParticleSystem>();
                   FirstGma npc2 = hit.collider.GetComponent<FirstGma>();
+                  SecondGma npc3 = hit.collider.GetComponent<SecondGma>();
                   if(npc != null){
                       npc.DisplayDialogue();
                   }
@@ -53,6 +54,9 @@ public class sidcontroller : MonoBehaviour {
                   }
                   if(npc2 != null){
                       npc2.DisplayDialogue();
+                  }
+                  if(npc3 != null){
+                      npc3.DisplayDialogue();
                   }
                }
            }
